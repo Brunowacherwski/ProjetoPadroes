@@ -47,6 +47,8 @@ public class PagamentoCartao implements StrategyPagamento{
 
     @Override
     public double calcularValorFinal(double valorDaCompra) {
+        System.out.println("Processando pagamento na modalidade: " + modalidade);
+        System.out.printf("Total pago no cartão: R$ %.2f%n", valorDaCompra);
         return valorDaCompra;
     }
 }
